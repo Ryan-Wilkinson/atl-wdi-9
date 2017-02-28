@@ -96,6 +96,7 @@ information to turn on and off different lights and adjust the thermostat up
 and down.
 
 > Answer here
+
  Home Automation Manage app has...
  - name of house 
  - temp in the house
@@ -112,9 +113,7 @@ This app will allow customers to browse a list of products (sneakers, in this
 case), add those products to a cart, and save that cart as a past order once the
 purchase is complete.
 
-> Answer here
-  Shoe Store app has...
-  Product page
+  shoe store app has...
   - name of product
   - price of product
   - stock of product
@@ -185,6 +184,7 @@ var exampleLine = {
 What are some advantages and disadvantages of choosing these representations? Please give at least one example of each.
 
 > Answer here
+
 Disadvantages: doesnt show which stop goes to which stop. like the path way from a -> b.
 advantage: each station has its own name so you can reference each one specifically.
 
