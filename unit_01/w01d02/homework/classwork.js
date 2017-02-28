@@ -10,23 +10,23 @@
 
 // 1. true || false 
 //var resOne = true;
-var resOne;
+var resOne = true;
 
 // 2. null || ''
 //var resTwo = falsey;
-var resTwo;
+var resTwo = false;
 
 // 3. 'false' && true
 //var resThree = true;
-var resThree;
+var resThree = true;
 
 // 4. !!0
 //var resFour = false;
-var resFour;
+var resFour = false;
 
 // 5. !null && !undefined
 //var resFive = true;
-var resFive;
+var resFive = true;
 
 /// Flow Control ///
 
@@ -62,7 +62,13 @@ resSeven+=12
 //    calculates the sum of all of those numbers, storing the result in the
 //    variable `resEight`.
 var resEight;
-// Replace This Comment With Your Code
+resEight = 0;
+
+for (var i = 0; i <= 1856; i++) {
+  resEight += i;
+  console.log(resEight)
+}
+
 
 // 9. Using a `for` loop, calculate the sum of all multiples of 7 between 0
 //    (inclusive) and 1000 (exclusive); store the result in the variable
