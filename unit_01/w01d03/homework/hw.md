@@ -60,14 +60,34 @@ track of whether tasks have been completed, it will also keep track of
 how long each task took to complete. Tasks can be grouped into 'projects' to
 keep them organized.
 
-> Answer here
+> To-Do List app has...
+ - name of task
+ - completed or not
+ - time completed
+ 
+ Projects have..
+ - name of project
+ - description of project
+ - a set of tasks to complete said project
 
 ### 2. Photo Sharing App
 
 In this app, users can upload photos to their accounts and share them with others. These photos can be grouped into albums.
 
-> Answer here
-
+> Photo Sharing app has...
+ - name of user
+ - a date of creation
+ - link to their account/photos
+ 
+ Albums have...
+ - name of album
+ - photos
+ 
+ Username/page has...
+ - name of user
+ - list of albums theyve uploaded
+ - list of photos theyve uploaded
+   
 ### 3. Home Automation Manager
 
 This app will be a tool for managing a home automation system; it will keep
@@ -76,6 +96,15 @@ information to turn on and off different lights and adjust the thermostat up
 and down.
 
 > Answer here
+ Home Automation Manage app has...
+ - name of house 
+ - temp in the house
+ - light settings in the house
+
+ light settings of a house...
+ - on and off switch
+ - dim/brightness switch
+ - which room the lights are in
 
 ### 4. Sneaker Store
 
@@ -84,6 +113,22 @@ case), add those products to a cart, and save that cart as a past order once the
 purchase is complete.
 
 > Answer here
+  Shoe Store app has...
+  Product page
+  - name of product
+  - price of product
+  - stock of product
+  - size range of products
+  - description of product
+  
+  Cart has...
+  - list of products
+  - quantity of products 
+  
+  Past order has...
+  - list of products
+  - completed/in progress status' of products
+  - date of order/completion of products
 
 ## Representing Abstractions in Code
 
@@ -140,6 +185,8 @@ var exampleLine = {
 What are some advantages and disadvantages of choosing these representations? Please give at least one example of each.
 
 > Answer here
+Disadvantages: doesnt show which stop goes to which stop. like the path way from a -> b.
+advantage: each station has its own name so you can reference each one specifically.
 
 ### 6. Doctor Appointment App
 
@@ -243,6 +290,9 @@ other? Are there any circumstances in which the other representation might be
 the better choice?
 
 > Answer here
+first one is good in the aspect that it has each appointment under their doctor so you can easily find what appointments a specific doctor has. bad thing is it doesnt show the other appointments of a specific patient.
+
+second one you cant see which patient the appointment is tied to unless you went in and looked at each appointment. will also be a little annoying to see all the appointments a specific doctor has.
 
 ## Tying It Together
 
@@ -253,13 +303,45 @@ You've been tasked with building an in-browser tic-tac-toe game.
 a.  What are some possible entities that your application might use to model its
     data? Please pick at least two, with at least two properties apiece.
 
-  > Answer here
+  > player
+    - has username
+    - has avatar
+  > game has 
+    - red player
+    - black player
+    - moves made by players
+  > a move has
+    - player color
+    - board position
 
 b.  How might those entities be represented in JavaScript code?
 
-  > Answer here
+  > var player = {
+    username: 'Ryan',
+    avatar: 'pic'
+    }
+    
+    var game = {
+      redPlayer: {
+      name: 'ryan',
+      avatar: 'pic'
+   },
+      blackPlayer: {
+      name: 'charles',
+      avatar: 'pic'
+     }
+    moves: [ {
+     playerPiece: 'red',
+     position: 'D4'
+   },
+   {
+     playerPiece: 'black',
+     position: 'A2'
+    }
+   ]
+  };
 
 c.  Justify your choices in a) and b). Why these entities? Why these
     representations?
 
-  > Answer here
+  > to show a visual representation of the game and the board vs having a list of moves and placements on a board playing off memory though a benefit of the second one is to have a complete detailed history every move to look back and see how your opponent plays rather than recalling the movements from memory.
