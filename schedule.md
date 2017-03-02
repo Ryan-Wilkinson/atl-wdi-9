@@ -1,6 +1,6 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Welcome to WDI 9!!!
 
-<!-- #### Week 5 - Mongo/Mongoose, Security, Project 2
+### Week 5 - Mongo/Mongoose, Security, Project 2
 <table><thead>
   <tr>
     <th>Time</th>
@@ -59,9 +59,9 @@
     <td>Homework</td>
     <td>Project Two</td>
   </tr>
-</tbody></table> -->
+</tbody></table>
 
-#### Week 4 - NodeJS, Express, Mongoose
+### Week 4 - NodeJS, Express, Mongoose
 <table><thead>
   <tr>
     <th>Time</th>
@@ -78,14 +78,19 @@
     <td>WDI9 Outcomes: Linkedin for your Job Search</td>
     <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w06d03/morning_exercise">Morning Exercise</a></td>
     <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w06d04/morning_exercise">Morning Exercise</a></td>
-    <td>Morning Exercise</td>
+    <td><a href="">Morning Exercise</a></td>
   </tr>
   <tr>
     <td><strong>Mod 1</strong></td>
     <td>Project 1 Retrospective</td>
     <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d02/instructor_notes/express_views.md">Handlebar Views</a></td>
-    <td>Database Design</td>
-    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d04/student_labs/musical_chairs_express_app_practice.md">DB Operations- Create/Read Lab</a></td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w07d03/instructor_notes/data_modeling.md
+">Database Design</a></td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d04/student_labs/musical_chairs_express_app_practice.md">DB Operations- Create/Read Lab</a>
+      <br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d04/student_labs/musical_chairs_express_app_practice.md">LAB</a>
+    </td>
     <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d05/student_labs/to_dont_lab.md">DB Operations Update/Delete Lab</a></td>
   </tr>
   <tr>
@@ -94,7 +99,7 @@
     <td><a href="https://github.com/ATL-WDI-Curriculum/node-express-intro-lesson">Review</a></td>
     <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d04/instructor_notes/express_create_read.md">DB Operations Create/Read</a></td>
     <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d05/instructor_notes/update_delete.md">DB Operations- Update/Delete</a></td>
-    <td>Diagnostic</td>
+    <td><a href="">Diagnostic</a></td>
   </tr>
   <tr>
     <td><strong>Mod 3</strong></td>
@@ -106,7 +111,7 @@
     <td><a href="https://github.com/ga-wdi-exercises/compliment-express">Review</a></td>
     <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d04/instructor_notes/express_create_read.md">DB Operations Create/Read</a></td>
     <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d05/instructor_notes/update_delete.md">DB Operations Update/Delete</a></td>
-    <td><a href="https://github.com/ATL-WDI-Exercises/express-node-mongoose-lab">AJAX Breakout Session</a></td>
+    <td><a href="">AJAX Breakout Session</a></td>
   </tr>
   <tr>
     <td><strong>Mod 4</strong></td>
@@ -115,9 +120,13 @@
       <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d03/student_labs/router_lab.md">Router LAB</a>
     </td>
     <td><a href="https://github.com/ga-wdi-exercises/compliment-express">LAB</a></td>
-    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d04/student_labs/musical_chairs_express_app_practice.md">LAB</a></td>
-    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d05/student_labs/to_dont_lab.md">DB Operations Update/Delete Lab</a></td>
-    <td>LAB</td>
+    <td>
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d04/student_labs/musical_chairs_express_app_practice.md">DB Operations- Create/Read Lab</a>
+      <br />
+      <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_02/w06d04/student_labs/musical_chairs_express_app_practice.md">LAB</a>
+    </td>
+    <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_02/w06d05/student_labs/in-class-code-hbs">In-class-code-hbs</a></td>
+    <td><a href="">LAB</a></td>
   </tr>
   <tr>
     <td><strong>Training</strong></td>
@@ -129,8 +138,24 @@
   </tr>
 </tbody></table>
 
+### Supplemental Reading for week 4
+#### Node.JS
+- [Node JS- Tutorialspoint](https://www.tutorialspoint.com/nodejs/)
+- [1. module.exports](http://openmymind.net/2012/2/3/Node-Require-and-Exports/)
+- [2. module.exports](https://www.sitepoint.com/understanding-module-exports-exports-node-js/)
+<br />
 
-#### Week 3 - Project Management/Project 1
+#### Express
+- [Express routing docs](https://expressjs.com/en/guide/routing.html)
+- [Express Router](https://scotch.io/tutorials/keeping-api-routing-clean-using-express-routers)
+<br />
+
+#### Other
+- [client side vs. server side ](https://spin.atomicobject.com/2015/04/06/web-app-client-side-server-side/)
+
+<br />
+
+### Week 3 - Project Management/Project 1
 <table><thead>
 <tr>
 <th>Time</th>
@@ -191,7 +216,7 @@
 </tr>
 </tbody></table>
 
-#### Week 2 - Javascript/DOM
+### Week 2 - Javascript/DOM
 <table><thead>
 <tr>
 <th>Time</th>
@@ -207,7 +232,7 @@
 <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w01d02/homework">Morning Exercise</a></td>
 <td>WDI9 Outcomes: Intro to Outcomes Program + Post-Course Support</td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/morning_exercises/javascript-good-and-bad-parts.md">Morning Exercise</a></td>
-<td><aa href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w02d04/morning_exercise">Morning Exercise</a></td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w02d04/morning_exercise">Morning Exercise</a></td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w02d05/morning_exercise">Morning Exercise</a></td>
 </tr>
 <tr>
@@ -215,21 +240,21 @@
 <td>Data Structures:
   <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d03/instructor_notes/arrays.md">Arrays</a>
 </td>
-<td><a href="https://github.com/ga-students/wdi-remote-matey/blob/master/unit_01/w01d04/instructor_notes/functions_and_scope.md">JS Functions + Scope</a></td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d04/instructor_notes/functions_and_scope.md">JS Functions + Scope</a></td>
 <td>
   <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/instructor_notes/dom-intro-and-dev-tools.md">Debugging, Chrome Dev Tools</a> 
   + <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/instructor_notes/dom-commands-part-one.md">Dom Manipulation</a>
 </td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d04/instructor_notes/intro_to_jquery.md
 ">Intro to jQuery</a></td>
-<td>LAB</td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/labs/3-3-17-khan-academy.md">LAB</a></td>
 </tr>
 <tr>
 <td><strong>Mod 2</strong></td>
 <td>Data Structures: 
   <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d03/instructor_notes/javascript_objects.md">JS Objects</a>
 </td>
-<td><a href="https://github.com/ga-students/wdi-remote-matey/blob/master/unit_01/w01d04/instructor_notes/functions_and_scope.md">JS Functions + Scope</a></td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d04/instructor_notes/functions_and_scope.md">JS Functions + Scope</a></td>
 <td>
   <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/instructor_notes/dom-intro-and-dev-tools.md">Debugging, Chrome Dev Tools</a> 
   + <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d01/instructor_notes/dom-commands-part-one.md">Dom Manipulation</a>
@@ -243,7 +268,7 @@
 <td>Data Structures:
   <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d03/instructor_notes/loops_iterators.md">Loops</a>
 </td>
-<td><a href="https://github.com/ga-students/wdi-remote-matey/blob/master/unit_01/w01d04/instructor_notes/functions_and_scope.md">JS Functions + Scope</a></td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w01d04/instructor_notes/functions_and_scope.md">JS Functions + Scope</a></td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d02/instructor_notes/click_events.md">Dom Events</a></td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w02d04/instructor_notes/intermediate_jquery.md">Intermediate jQuery</a></td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/unit_01/w05d04/instructor_notes/css-and-jquery-transition-transform-animate.md">CSS Animations</a></td>
@@ -274,15 +299,15 @@
   <a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/tree/master/unit_01/w02d05/student_labs/jedi-jquery-starter
   ">Javascript Jedi LAB</a><br />
 </td>
-<td>CS Algorithms- Danny</td>
+<td>Intro to Design Patterns - Danny</td>
 </tr>
 <tr>
 <td><strong>Homework</strong></td>
-<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/2-27-17-progress-bar%2Ba-smarter-way">Homework</a></td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/2-27-17-progress-bar%2Ba-smarter-way.md">Homework</a></td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/2-28-17-function-drills%2Ba-smarter-way.md">Homework</a></td>
-<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/3-1-17-progress-bar%2Ba-smarter-way">Homework</a></td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/3-1-17-progress-bar%2Ba-smarter-way.md">Homework</a></td>
 <td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/3-2-17-counter-factory%2Ba-smarter-way.md">Homework</a></td>
-<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/3-3-17-stopwatch%2Ba-smarter-way">Homework</a></td>
+<td><a href="https://github.com/ATL-WDI-Curriculum/atl-wdi-9/blob/master/homework/3-3-17-stopwatch%2Ba-smarter-way.md">Homework</a></td>
 </tr>
 </tbody></table>
 
@@ -291,9 +316,29 @@
 - [Intro to Loops](https://www.teamten.com/lawrence/programming/intro/intro8.html)
 - [Array methods](http://bdcampbell.net/javascript/book/javascript_the_good_parts.pdf) pages 78 - 83
 - [Functions](http://bdcampbell.net/javascript/book/javascript_the_good_parts.pdf) pages 26 - 28
+- [Functions](https://www.codecademy.com/courses/functions-in-javascript-2-0/0/1)
 - [Eloquent JavaScript](http://eloquentjavascript.net/00_intro.html)
 - [Khan Academy- HTML/jQuery](https://www.khanacademy.org/computing/computer-programming/html-js-jquery)
 - [Khan Academy- JS Drawing and Animation](https://www.khanacademy.org/computing/computer-programming/programming)
+- [If/else w3 schools](https://www.w3schools.com/js/js_if_else.asp)
+- [If/else MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
+- [If/else tutorial-after hours programming](http://www.afterhoursprogramming.com/tutorial/JavaScript/If-Statements/)
+- [Switch statements w3 schools](https://www.w3schools.com/js/js_switch.asp)
+- [Switch statements MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
+- [Switch statements tutorial- tutorialspoint](http://www.tutorialspoint.com/javascript/javascript_switch_case.htm)
+- [Switch Statements tutorial-after hours programming](http://www.afterhoursprogramming.com/tutorial/JavaScript/Switch-Statement/)
+- [DOM Cheatsheet](http://christianheilmann.com/stuff/JavaScript-DOM-Cheatsheet.pdf)
+- [Dom Reference](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
+- [this in JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
+- [Functions in JS](https://www.w3schools.com/js/js_object_definition.asp)
+- [Event.target in JS](https://developer.mozilla.org/en-US/docs/Web/API/Event/target)
+- [Event.target in JS](https://www.w3schools.com/jsref/event_target.asp)
+<br />
+
+#### jQuery
+- [A Smarter Way to Learn jQuery](https://github.com/JideLambo/javascript-books/blob/master/A%20Smarter%20Way%20to%20Learn%20jQuery%20-%20Mark%20Myers.pdf) - this was the only link that I found.  Otherwise, you might be able to download it somewhere.
+- [jQuery, and intro](https://www.digitalocean.com/community/tutorials/an-introduction-to-jquery) 
+- [jQuery Cheat Sheet](https://oscarotero.com/jquery/)
 <br />
 
 #### ES6
@@ -305,8 +350,15 @@
 - [ES5, ES2015, Typescript](https://johnpapa.net/es5-es2015-typescript/)
 - [Intro to ES2015](http://blog.teamtreehouse.com/get-started-ecmascript-6)
 - [ES2016 and beyond](http://javascriptplayground.com/blog/2016/02/es2016-and-beyond/)
+<br />
 
-#### Week 1 - Fundamentals
+#### Other
+- [Dev Tool Shortcuts](https://developer.chrome.com/devtools/docs/shortcuts)
+- [Debugging JS](https://scotch.io/tutorials/debugging-javascript-with-chrome-devtools-breakpoints)
+- [Searching in dev tools](http://developer.telerik.com/featured/16-ways-to-search-find-and-edit-with-chrome-devtools/)
+- [Bullet Journal](http://bulletjournal.com/get-started/)
+
+### Week 1 - Fundamentals
 <table><thead>
 <tr>
 <th>Time</th>
@@ -404,10 +456,51 @@
 - [Bootstrap](http://getbootstrap.com/getting-started/)
 - [Built with Bootstrap](https://bootstrapbay.com/blog/built-with-bootstrap/)
 - [Bootstrap Tutorial](https://www.youtube.com/watch?v=gqOEoUR5RHg)
+
+#### Debugging
+- [Dev Tool Shortcuts](https://developer.chrome.com/devtools/docs/shortcuts)
+- [Debugging JS](https://scotch.io/tutorials/debugging-javascript-with-chrome-devtools-breakpoints)
+- [Debugging on different browsers- Tutorialspoint](https://www.tutorialspoint.com/javascript/javascript_debugging.htm)
+- [Debugging- W3 Schools](https://www.w3schools.com/js/js_debugging.asp)
+- [Debugging- Creative Bloq Article](http://www.creativebloq.com/javascript/javascript-debugging-beginners-3122820)
+- [Debugging on Wired](https://www.wired.com/2010/02/javascript_debugging_for_beginners/)
+- [Debugging on Chrome- Tutorial](https://developer.chrome.com/extensions/tut_debugging)
+<br />
 <br />
 
 ## Important Links
 
 * [Google Calendar](https://calendar.google.com/calendar/embed?src=b4s54mkg0s2c1ddov57cffe4ls%40group.calendar.google.com&ctz=America/New_York)
-* [Hypepotamus Calendar of Events](https://www.google.com/search?q=hypepotamus+calendar&oq=hypepotamus+calendar&aqs=chrome.0.69i59.4188j0j7&sourceid=chrome&ie=UTF-8)
+* [Hypepotamus Calendar of Events](https://hypepotamus.com/events/)
+* [Meetups](http://www.meetup.com/)
+* [WDI-9 JS Cheatsheet](https://docs.google.com/document/d/1J_ZjV0n65FZ_yQM8dqPqVw5JyebQh_AvhmXLYqCrc3o/edit?usp=sharing)
+* [WDI-9 Bootstrap Cheatsheet](https://github.com/ATL-WDI-Curriculum/bootstrap-intro/blob/master/wdi-9-bootstrap-cheatsheet.md)
+* [Daily Design/UI Challenge](http://www.dailyui.co/)- become a better designer in 100 days!
+
+## Tutorial Sites
+
+* [Code Wars](codewars.com)
+* [Nodingbat](nodingbat.com)
+* [Free Code Camp](https://www.freecodecamp.com/)
+* [r/learn programming](https://www.reddit.com/r/learnprogramming/)
+* [Khan Academy](https://www.khanacademy.org/computing/computer-programming)
+* [Code Academy- JS](https://www.codecademy.com/learn/javascript)
+* [Code Academy- HTML](https://www.codecademy.com/learn/web)
+* [Daily UI](http://www.dailyui.co/)
+
+## Books
+
+* [A Smarter Way to Learn JS](http://www.cpp.edu/~jcmcgarvey/513_2016/ASmarterWaytoLearnJavaScript.pdf)
+* [JavaScript + JQuery](https://www.dropbox.com/s/05je29f3oxj7oa0/JavaScript%20and%20JQuery%20Interactive%20Front-End%20Web%20Development%202014.pdf?dl=0)
+* [JavaScript the Good Parts](http://bdcampbell.net/javascript/book/javascript_the_good_parts.pdf)
+* [Eloquent JS](http://eloquentjavascript.net/)
+* [DOM Enlightenment](http://domenlightenment.com/#1.1)
+* [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS)
+
+## Articles
+* [My first month of coding](https://www.thinkful.com/blog/my-first-month-coding-an-emotional-roller-coaster/)
+* [Things we wish we knew when learning to code](https://medium.com/code-school/things-we-wish-we-knew-when-we-were-learning-to-code-bd83067ac509#.v1rtk8544)
+
+## Twitter Feeds to Follow
+* [Code newbie](https://twitter.com/codenewbies)
 

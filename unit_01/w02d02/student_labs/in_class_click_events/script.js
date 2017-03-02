@@ -1,4 +1,5 @@
 window.onload = function() {
+<<<<<<< HEAD
 
 
 var firstButton = document.getElementById('firstButton');
@@ -28,4 +29,6 @@ thirdButton.addEventListener('click', function() {
 });
 
 
+=======
+>>>>>>> upstream/master
 }
