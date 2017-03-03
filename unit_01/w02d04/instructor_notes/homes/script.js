@@ -9,8 +9,9 @@ $(function(){
 	$('.jumbotron').addClass('text-center');
 	
 
-	$('#addHome').on('click', function() {
-    console.log(this);
+	$('#addHome').on('click', function($event) {
+    console.log($event);
+    console.log(this)
 	});
 
 
@@ -19,12 +20,12 @@ $(function(){
 	var $rowThatWasClicked = $(this);
 	$rowThatWasClicked.remove();
 	});
-  }
- }	
+  
+ 	
 
-$('#addHome').click(function($event)) {
+$('#addHome').click(function($event) {
 	var house = newHomes.pop();
-	var homeTr = $(
+	var $homeTr = $(
 				`
 				<tr>
 				<td>${house.address}</td>
