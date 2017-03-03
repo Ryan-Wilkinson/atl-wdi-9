@@ -49,9 +49,9 @@ const CounterCollection = {
 const Presenter = {
   insertCounterComponent: function(newCountId){
     console.log(`insert counter component #${newCountId}`);
-    // Your Code Here
   },
   refreshCounterComponent: function(countId){
+    // Your Code Here
     console.log(`refresh counter component #${countId}`);
     // Your Code Here
   },
