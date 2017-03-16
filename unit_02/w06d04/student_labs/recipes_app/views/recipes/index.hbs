@@ -1,0 +1,10 @@
+<h1> You have {{recipes.length}} Recipes </h1>
+<ol>
+  {{#each recipes}}
+    <li>Title: {{title}}<br>
+    Vegetarian: {{veggie}}<br>
+    Pic: <br><img src="{{imageUrl}}">
+    </li>
+    <br>
+  {{/each}}
+</ol>
