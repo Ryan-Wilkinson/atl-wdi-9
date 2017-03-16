@@ -14,7 +14,12 @@ return largeBarrel;
 // Sailing the Seas
 
 var shipFuelCost = function(fuelPrice, milesPerGallon){
-  //your code here
+  var circumferece = 24901;
+
+  var totalGallons = circumferece / milesPerGallon;
+  var totalCost = totalGallons * fuelPrice;
+
+  return totalCost;
 };
 
 //*************************
@@ -22,7 +27,14 @@ var shipFuelCost = function(fuelPrice, milesPerGallon){
 // GROG
 
 var calcFruitJuice = function(a, b, c, d){
-  //your code here
+  var costco = (b / 100) * a;
+  var kirkland = (d / 100) * c;
+  var totalJuiceGallons = (a + c);
+  var totalJuicePercent = costco + kirkland;
+
+  var complete = totalJuicePercent / totalJuiceGallons;
+
+  return complete; 
 };
 
 //DO NOT EDIT BELOW THIS LINE//
