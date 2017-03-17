@@ -3,16 +3,17 @@ var path        = require('path');
 var logger      = require('morgan');
 var express     = require('express');
 var hbs         = require('hbs');
-/* app settings*/
 var app         = express();
 var port        = process.env.PORT || 3000;
-/* set up the application params*/
-
+var methodOverride = require('method-override');
 var bodyParser = require('body-parser');
 
 app.use(bodyParser.urlencoded({
   extended: true
 }));
+
+app.use(methodOverride('_method'));
+
 
 // controllers
 var todosController = require('./controllers/todos.js');
@@ -23,6 +24,7 @@ app.use( logger('dev'));
 
 /*Views*/
 app.set('view engine', 'hbs');
+app.use(express.static(__dirname + '/public'));
 
 /* HOME */
 app.get('/', function(req,res) {

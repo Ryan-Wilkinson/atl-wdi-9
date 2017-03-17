@@ -1,0 +1,32 @@
+body {
+	background-color: lightblue;
+	text-align: center;
+	font-family: 'Jim Nightshade', cursive;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+}
+
+.form {
+	background-color: grey;
+	margin: 0 auto;
+	height: 100px;
+	width: 250px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: space-around;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+#button {
+	background-color: lightpink;
+	transition: 1s;
+}
+
+#button:hover {
+	background-color: yellow;
+	transition: .5s;
+}
