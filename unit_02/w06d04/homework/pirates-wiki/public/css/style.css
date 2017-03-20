@@ -1,0 +1,58 @@
+body {
+	/*background-color: white;*/
+/*	background: url('https://upgruv-img.rbl.ms/simage/https%3A%2F%2Fassets.rbl.ms%2F9564330%2F1200x600.jpg/2000,2000/mZHpClhRZZF0K0FE/img.jpg') no-repeat center;
+*/	
+	background-color: black;
+	font-family: 'Jim Nightshade', cursive;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	color: white;
+}
+
+h1 {
+	text-align: center;
+}
+
+a {
+	color: white;
+	font-size: 20px;
+}
+
+nav a {
+	color: white;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+}
+
+li {
+	margin-bottom: 10px;
+}
+
+#form-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 150px;
+}
+
+form {
+	border: 3px white solid;
+	padding: 10px;
+	font-size: 25px;
+	border-radius: 5%;
+}
+
+.form {
+	display: flex;
+	justify-content: space-between;
+	margin: 10px;
+}
+
+#submit {
+	display: flex;
+	justify-content: center;
+}

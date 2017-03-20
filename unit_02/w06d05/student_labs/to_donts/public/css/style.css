@@ -1,5 +1,6 @@
 body {
-	background-color: lightblue;
+	/*background-color: white;*/
+	background: url('https://upgruv-img.rbl.ms/simage/https%3A%2F%2Fassets.rbl.ms%2F9564330%2F1200x600.jpg/2000,2000/mZHpClhRZZF0K0FE/img.jpg') no-repeat center;
 	text-align: center;
 	font-family: 'Jim Nightshade', cursive;
 	display: flex;
@@ -7,8 +8,16 @@ body {
 	margin: 0 auto;
 }
 
+/*http://media1.giphy.com/media/l2JHRhAtnJSDNJ2py/giphy.gif*/
+
+h1 {
+	font-size: 45px;
+	color: white;
+}
+
 .form {
-	background-color: grey;
+	background-color: rgba(0,0,0,.8);
+	color: white;
 	margin: 0 auto;
 	height: 100px;
 	width: 250px;
@@ -19,14 +28,57 @@ body {
 	justify-content: space-around;
 	padding-bottom: 10px;
 	padding-top: 10px;
+	font-size: 20px;
+	border: 2px solid white;
 }
 
 #button {
-	background-color: lightpink;
+	background: url('https://media.tenor.co/images/6c0fc9ca10c27c1edf55cb1f1764d637/tenor.gif') no-repeat center;
 	transition: 1s;
+    font-family: 'Jim Nightshade', cursive;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 5px;
+    color: white;
 }
 
 #button:hover {
-	background-color: yellow;
+	background: url('https://upload.wikimedia.org/wikipedia/commons/6/62/Starsinthesky.jpg') no-repeat top left;
 	transition: .5s;
 }
+
+li {
+	background-color: rgba(0,0,0,.8);
+	color: white;
+	margin: 0 auto;
+	height: 100px;
+	width: 250px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: space-around;
+	padding-top: 25px;
+	font-size: 25px;
+	border: 2px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
