@@ -25,3 +25,7 @@ button {
   flex-wrap: wrap;
   margin-top: 1em;
 }
+
+.image-jumbotron {
+  border: solid black 4px;
+}

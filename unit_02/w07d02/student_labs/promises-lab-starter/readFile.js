@@ -4,19 +4,29 @@ const fs = require('fs');
 
 let inFile = process.argv[2];
 
-fs.readFile(inFile, { encoding: 'utf8' }, function(error, content) {
-  if (error) {
-    console.error(error);
-  }
+let readTheFilePromise = new Promise(function(resolve, reject){
+  fs.readFile(inFile, { encoding: 'utf8' }, function(error, content) {
+    resolve(content);
+    reject(error);
+  });
+});
 
-  // 'Billy\nJames\nNick\n' --> ['Billy', 'James', 'Nick']
-
-  let lines = content.split('\n');
-
-  // clean up the array by removing the empty line
+readTheFilePromise.then(function(result){
+  return result;
+})
+.then(function(result){
+  let lines = result.split('\n');
+  return lines;
+})
+.then(function(lines){
   lines.pop();
-
-  lines.forEach(function(line) {
+  return lines;
+})
+.then(function(lines){
+  lines.forEach(function(line){
     console.log('Hello, ' + line + '!');
   });
+})
+.catch(function(error){
+  console.log("an error occured line 49", error);
 });

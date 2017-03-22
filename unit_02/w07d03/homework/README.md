@@ -30,7 +30,23 @@ entities/abstractions (e.g. Senior Paws app, above) that the app might use, and 
 This app provides easy access to all your e-mail service providers in one app. The app will let you select one of your email addresses and view your e-mails for that address.
 
 ```
-Write your answer here or in a separate js file.
+Users: ID, Name, Age, [Email Addresses] -> Email Addresses: ID, Name, URL, password, Emails
+
+var EmailSchema = new Schema ({
+	id: kjBANKLJBFWLKNfklawlf9,
+	name: String,
+	user_tied_to: String,
+	url: String,
+	date_created: Date
+	emails: Data?
+});
+
+var UserSchema = new Schema ({
+	id: UAWHFkafkblanwiofhAIO,
+	name: String,
+	age: Number,
+	emailAccs: [EmailSchema]
+});
 ```
 
 ### 2. Radio on the Internet app
@@ -39,7 +55,7 @@ This app hosts a ton of radio stations, each featuring their own playlists of so
 
 
 ```
-Write your answer here or in a separate js file.
+Genre Radio Station: ID, Name, Genre, Popularity [Songs] -> Songs: ID, Title, Artist, Duration
 ```
 
 ### 3. Rock Concert App
@@ -47,19 +63,24 @@ Write your answer here or in a separate js file.
 This app will be a tool for managing all of your favorite bands' concerts; it will keep track of their tour dates, ticket purchasing, and next recommended show.
 
 ```
-Write your answer here or in a separate js file.
+Bands: ID, Name, Next Concert, [Concerts] -> Concerts: ID, Date, Price, Location, Time, Recomended Shows
+
+Is there a way to pull info from the nested concerts and push it into the bands parent. Like sort the concerts by date and pull the earliest one and push it to the "Next Concert" in the bands?
 ```
 
 ### 4. Coffee To-Go App
 
 This app will allow customers to browse a list of coffeeshops nearby, order drinks off of their menu, add those drinks to a shopping cart, and save that cart as a past order once the purchase is complete.
 
+```
+Users: ID, Name, locations, payment info, [Cart], Order History -> Cart: ID, Coffee Shop, [Drinks], Total Price -> Drinks: ID, Name, Size, Price, Description
+```
 ### 5. Team Tracker App
 
 This app shows you all the latest stats from your favorite sports teams. You can view individual player stats and full team stats.
 
 ```
-Write your answer here or in a separate js file.
+User: ID, Name, Username, [Team(s)] -> Team(s): ID, Name, Location, Team Stats, [Players] -> Players: ID, Name, Team Number, Stats
 ```
 
 
@@ -68,7 +89,7 @@ Write your answer here or in a separate js file.
 Q. When you were creating relationships between the models, what were some thoughts or questions you had to help guide a connection between them?
 
 ```
-Write your answer here or in a separate js file.
+It was definitely different writing it out like this instead of full on coding it out, but it does help me understand the whole set up and how the nesting works.
 ```
 
 ### Reading and Videos for Tomorrow
