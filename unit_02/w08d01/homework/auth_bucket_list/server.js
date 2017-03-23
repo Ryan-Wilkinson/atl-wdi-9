@@ -17,6 +17,7 @@ var sessionsController = require('./controllers/sessionsController.js');
 var app = express();
 
 mongoose.connect('mongodb://localhost/auth');
+var db = mongoose.connection;
 
 app.set('view engine', 'hbs');
 
