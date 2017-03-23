@@ -1,0 +1,10 @@
+<main>
+	<h2>Handmade, Fresh, Daily!</h2>
+		<div class="donut-container ">
+			{{#each donut}}
+				<img src='{{this.img}}' class='main-img'><a href="/donuts/{{this.id}}"></a>
+				<a href="/donuts/{{this.id}}"><h3>{{this.name}}</h3></a>
+				<p>$ {{this.price}} each </p>
+			{{/each}}	
+		</div>
+</main>

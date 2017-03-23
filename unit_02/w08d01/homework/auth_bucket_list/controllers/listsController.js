@@ -2,7 +2,11 @@
 // REQUIREMENTS
 //======================
 //require express,router,  mongoose, List schema, User schema, authHelpers
-
+var express = require('express');
+router = express.Router();
+var User = require('../models/user.js');
+var List = require('../models/list.js');
+var authHelpers = require('../helpers/auth.js');
 
 //======================
 // CREATE

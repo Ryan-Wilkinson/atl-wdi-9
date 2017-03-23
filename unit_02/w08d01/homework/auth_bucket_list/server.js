@@ -1,5 +1,4 @@
 pry = require('pryjs')
-
 var express = require('express');
 var bodyParser = require('body-parser');
 var session = require('express-session');
@@ -9,9 +8,9 @@ var hbs = require('hbs');
 var mongoose = require('mongoose');
 
 
-
-var usersController = require('./controllers/users.js');
-var sessionsController = require('./controllers/sessions.js');
+var listsController = require('./controllers/listsController.js');
+var usersController = require('./controllers/usersController.js');
+var sessionsController = require('./controllers/sessionsController.js');
 
 // require the list controller here
 
@@ -35,6 +34,7 @@ app.use(session({
 
 app.use('/users', usersController);
 app.use('/sessions', sessionsController);
+app.use('/lists', listsController);
 
 //add the third app.use here (check readme for which route)
 

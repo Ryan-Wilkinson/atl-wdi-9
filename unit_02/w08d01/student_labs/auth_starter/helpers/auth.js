@@ -35,4 +35,4 @@ module.exports = {
   createSecure: createSecure,
   loginUser: loginUser,
   authorize: authorize
-}
+};
