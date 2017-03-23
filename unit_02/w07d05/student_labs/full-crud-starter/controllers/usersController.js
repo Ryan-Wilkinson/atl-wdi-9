@@ -9,8 +9,10 @@ router.get('/', function(req, res){
   User.find({})
     .exec(function(err, users){
       if (err) { console.log(err); }
-      console.log(users);
-      res.send(users);
+      // console.log(users);
+      res.render('users/index', {
+        users: users
+      });
     });
 });
 
@@ -19,8 +21,20 @@ router.get('/:id', function(req, res){
   User.findById(req.params.id)
   .exec(function(err, user) {
     if (err) console.log(err);
-    console.log(user);
-    res.send(user);
+    res.render('users/show', {
+      user: user
+    });
+  });
+});
+
+// USER EDIT ROUTE
+router.get('/:id/edit', function(req, res) {
+  User.findById(req.params.id)
+  .exec(function(err, user) {
+    if (err) console.log(err);
+    res.render('users/edit.hbs', {
+      user: user
+    });
   });
 });
 
@@ -33,21 +47,23 @@ router.post('/', function(req, res){
   });
   user.save(function(err, user){
     if (err) { console.log(err); }
-    console.log(user);
+    // console.log(user);
     res.send(user);
   });
 });
 
 // USER UPDATE ROUTE
-router.patch('/:id', function(req, res){
+router.put('/:id', function(req, res){
   User.findByIdAndUpdate(req.params.id, {
     first_name: req.body.first_name,
     email: req.body.email
   }, { new: true })
   .exec(function(err, user){
     if (err) { console.log(err); }
-    console.log(user);
-    res.send(user);
+    // console.log(user);
+    res.render('users/show.hbs', {
+      user: user
+    });
   });
 });
 
@@ -59,6 +75,20 @@ router.delete('/:id', function(req, res){
     console.log('User deleted!');
     res.send("User deleted");
   });
+});
+
+// ITEM INDEX ROUTE
+router.get('/:id/items', function(req, res){
+  User.findById(req.params.id)
+    .exec(function(err, user){
+      if (err) { console.log(err); }
+      // console.log(user.id)
+      // console.log(user.items)
+      res.render('items/index.hbs', {
+        items: user.items,
+        user: user
+      });
+    });
 });
 
 // ADD A NEW ITEM
@@ -82,7 +112,7 @@ router.delete('/:userId/items/:id', function(req, res){
   })
   .exec(function(err, item){
     if (err) console.log(err);
-    res.send(item + " Item deleted");
+    res.redirect('/users');
   });
 });
 
