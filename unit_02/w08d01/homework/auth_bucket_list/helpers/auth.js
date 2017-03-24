@@ -29,7 +29,7 @@ function loginUser(req, res, next) {
 
 //create a function called "authorized" that checks if the CurrentUser's id matches the id in params
 function authorized (req, res, next) {
-  if(!req.session.currentUser || req.params.id !== req.session.currentUser.id) {
+  if(!req.session.currentUser || req.params.id !== req.session.currentUser._id) {
     res.json({status: 404, data: 'oops you\'re not authorized, teehee'});
   }
   next();

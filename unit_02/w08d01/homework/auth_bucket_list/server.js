@@ -6,6 +6,7 @@ var methodOverride = require('method-override');
 var logger = require('morgan');
 var hbs = require('hbs');
 var mongoose = require('mongoose');
+var authHelpers = require('./helpers/auth.js')
 
 
 var listsController = require('./controllers/listsController.js');
@@ -35,7 +36,7 @@ app.use(session({
 
 app.use('/users', usersController);
 app.use('/sessions', sessionsController);
-app.use('/lists', listsController);
+app.use('/users/:userId/lists', listsController);
 
 //add the third app.use here (check readme for which route)
 
