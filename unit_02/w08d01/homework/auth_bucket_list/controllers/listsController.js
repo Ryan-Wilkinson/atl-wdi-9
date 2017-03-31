@@ -13,6 +13,17 @@ var mongoose = require('mongoose');
 // CREATE
 //======================
 //create a POST "/" route that saves the list item to the logged in user
+router.get('/new', function(req, res) {
+  User.findById(req.params.id)
+    .exec(function(err, user) {
+      if (err) {console.log(err);}
+      console.log(user);
+      res.render('lists/new.hbs', {
+        user: user
+      });
+    });
+});
+
 router.post('/', function(req, res) {
   User.findById(req.params.id)
     .exec(function(err, user) {
@@ -35,13 +46,36 @@ router.post('/', function(req, res) {
 // EDIT
 //======================
 //create a GET "/:id/edit" route that renders the list's edit page
+router.get('/:id/edit', function(req, res) {
+	User.findById(req.params.id)
+	.exec(function(err, user) {
+		if(err){console.log(err);}
 
+		var listItem = user.list.id(req.params.listId);
+		res.render('lists/edit', {
+			user: user,
+			listItem: listItem
+		});
+	});
+});
 
 //======================
 // UPDATE
 //======================
 //create a PUT "/:id" route that saves the changes from the list.
-
+router.put('/:id', function(req, res) {
+	User.findById(req.params.id)
+	.exec(function(err, user) {
+		if(err){console.log(err);}
+		var listItem = user.list.id(req.params.listId);
+		listItem.name = req.body.name;
+		listItem.completed = req.body.completed;
+		user.save(function(err, item) {
+			if(err){console.log(err);}
+			res.redirect('/users/:id/lists')
+		});
+	});
+});
 
 //======================
 // DELETE

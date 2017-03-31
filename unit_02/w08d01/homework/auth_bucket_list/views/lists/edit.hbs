@@ -1,1 +1,12 @@
-<h2>Edit this Item</h2>
+<h2>Edit this Damn Item</h2>
+
+<form action="/users/{{user.id}}/lists/{{listItem.id}}?_method=PUT" method="post">
+  <label for="name">Name:</label>
+  <input type="text" name="name" value="{{listItem.name}}">
+<br>
+  <label for="completed"></label>
+  Yes <input type="radio" name="completed" value="true" checked='true'>
+  No <input type="radio" name="completed" value="false">
+<br>
+  <input type="submit" value="Update The Fucking List Item">
+</form>
