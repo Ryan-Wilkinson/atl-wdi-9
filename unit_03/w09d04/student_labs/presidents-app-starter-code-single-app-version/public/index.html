@@ -15,7 +15,7 @@
 
       <ul id="presidents">
         <li ng-repeat="president in presidents.all">
-          <strong>{{president.name}}</strong> <em>({{president.start}} - {{president.end}})</em>
+          <strong>{{president.name}}</strong> <em>({{president.start}} - {{president.end}}) <button ng-click="presidents.removePresident(president, $index)">Delete</button> </em>
         </li>
       </ul>
 
