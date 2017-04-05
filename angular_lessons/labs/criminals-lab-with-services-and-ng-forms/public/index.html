@@ -1,11 +1,14 @@
-  x<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
   <title>Infamous Criminals</title>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-messages.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-animate.min.js"></script>
   <script src="js/app.js"></script>
   <script src="js/criminalsController.js"></script>
+  <script src="js/services/CriminalsServices.js"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body ng-app='InfamousCriminals'>
@@ -16,29 +19,66 @@
     <ul id="criminals">
       <li ng-repeat="criminal in criminals.all">
         <strong>{{criminal.name}}</strong> <em>{{criminal.location}}</em> <span class='status {{criminal.status | lowercase }}'>{{criminal.status | uppercase}}</span>
-        <button class='delete' ng-click="criminals.deleteCriminal(criminal)">X</button>
+        <button class='delete' ng-click="criminals.deleteCriminal(criminal, $index)">X</button>
       </li>
     </ul>
 
 
-    <form ng-submit="criminals.addCriminal()" id="newCriminal">
+    <form ng-submit="criminals.addCriminal()" 
+          id="newCriminal" 
+          name="myForm" 
+          novalidate>
+
+          <!-- name form checking -->
       <div>
         <label for="newCriminal-name">Name:</label>
-        <input type="text" id="newCriminal-name" ng-model="criminals.newCriminal.name" placeholder="Prof. Moriarty">
+        <input type="text" 
+               name="name"
+               class="form-control"
+               id="newCriminal-name" 
+               ng-model="criminals.newCriminal.name" 
+               ng-minlength="3" 
+               ng-maxlength="10" 
+               required>
       </div>
+       <div class="error-messages" ng-messages="myForm.name.$error">
+          <div ng-message="required">Name is required</div>
+          <div ng-message="minlength">Name is too short</div>
+          <div ng-message="maxlength">Name is too long</div>
+        </div> 
+
+          <!-- location form checking -->
       <div>
         <label for="newCriminal-location">Location:</label>
-        <input type="text" id="newCriminal-location" ng-model="criminals.newCriminal.location" placeholder="Reichenbach Falls, CH">
+        <input type="text" 
+               name="location"
+               id="newCriminal-location" 
+               ng-model="criminals.newCriminal.location" 
+               required
+               ng-pattern="/^[a-zA-Z]+, [a-zA-Z]{2}$/">
       </div>
+        <div class="error-messages" ng-messages="myForm.location.$error">
+           <div ng-message="required">Location is required</div>
+           <div ng-message="pattern">Please type a valid location</div>
+         </div> 
+
+          <!-- status form checking -->
       <div>
         <label for="newCriminal-status">Status:</label>
-        <select id="newCriminal-status" ng-model='criminals.newCriminal.status'>
+        <select id="newCriminal-status" 
+                name="status"
+                ng-model='criminals.newCriminal.status'
+                required>
           <option value="" disabled>- - Please Select One - -</option>
           <option value="Alive">Alive</option>
           <option value="Dead">Dead</option>
           <option value="Unknown" selected>Unknown</option>
         </select>
       </div>
+        <div class="error-messages" ng-messages="myForm.status.$error">
+         <div ng-message="required">Status is required</div>
+       </div> 
+
       <div>
         <input type="submit" value="Add Criminal">
       </div>

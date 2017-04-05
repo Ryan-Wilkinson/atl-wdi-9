@@ -38,6 +38,7 @@ router.get('/:id', function showAction(request, response) {
   }).select('-__v');
 });
 
+// UPDATE
 router.patch('/:id', function updateAction(request, response) {
   var id = request.params.id;
 
@@ -56,6 +57,7 @@ router.patch('/:id', function updateAction(request, response) {
   }).select('-__v');
 });
 
+// DELETE
 router.delete('/:id', function destroyAction(request, response) {
   var id = request.params.id;
 
