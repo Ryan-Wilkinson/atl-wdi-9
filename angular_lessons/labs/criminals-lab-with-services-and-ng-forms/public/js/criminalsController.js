@@ -15,6 +15,7 @@ function CriminalsController(CriminalsService){
 
   function getCriminals(){
     CriminalsService.getCriminals().then(function (criminalsData){
+    CriminalsService.getCriminals().then(function (criminalsData) {
       self.all = criminalsData;
     });
   }
@@ -31,6 +32,17 @@ function CriminalsController(CriminalsService){
         .then(function(response){
            self.all.splice(index, 1);
     });
+     self.getCriminals();
+       self.newCriminal = {};
+   });
+  }
+
+  function deleteCriminal(criminal){
+    CriminalsService.deleteCriminal(criminal)
+      .then(function(response){
+        var index = self.all.indexOf(criminal);
+        self.all.splice(index, 1);
+      });
   }
 }
 
