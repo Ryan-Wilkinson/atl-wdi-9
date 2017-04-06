@@ -45,6 +45,7 @@ router.patch('/:id', function updateAction(request, response) {
     if(error) response.json({message: 'Could not find criminal b/c:' + error});
 
     if(request.body.name) criminal.name = request.body.name;
+    if(request.body.crime) criminal.crime = request.body.crime;
     if(request.body.location) criminal.location = request.body.location;
     if(request.body.status) criminal.status = request.body.status;
 
