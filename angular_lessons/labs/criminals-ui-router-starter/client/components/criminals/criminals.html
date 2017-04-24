@@ -8,11 +8,15 @@
 
 		<!-- Reference for Gerry -->
     <!-- <em>{{criminal.crime}}</em> -->
-    
+
     <span ng-if="criminal.status" class='status {{criminal.status | lowercase }}'>{{criminal.status | uppercase}}</span>
 
+<<<<<<< HEAD
     <a ui-sref="criminalsShow({ criminalId:criminal._id })">Show Crime</a> |
     <a ui-sref="criminalsEdit({ criminalId:criminal._id })">Edit Criminal</a> |
     <button ng-click="$ctrl.deleteCriminal(criminal._id)">Delete</button>
+=======
+    <a ui-sref="criminalsShow({criminalId: criminal._id})">{Click to see their crime (in users#show)</a>
+>>>>>>> 721f3ea1a286054d7db5e49212ca1ff1b776f927
   </li>
 </ul>
